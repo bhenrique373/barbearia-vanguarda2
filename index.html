@@ -14,13 +14,16 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbearia Vanguarda</title>
   </head>
 
   <body>
-     <dialog class="justify-between">
+    <dialog class="justify-between">
       <div role="logo"></div>
       <nav class="flex flex-col gap-4">
         <span>
@@ -63,10 +66,22 @@
         </header>
 
         <div id="hero-slider" role="mask">
-          <img
-            src="public/hair-spies-Fr3SE47PLG4-unsplash (1).jpg"
-            alt="Slide 1"
-          />
+          <swiper-container autoplay loop speed="3000">
+            <swiper-slide>
+              <img
+                src="public/hair-spies-Fr3SE47PLG4-unsplash (1).jpg"
+                alt="Slide 1"
+              />
+            </swiper-slide>
+            <swiper-slide> <img
+                src="public/slide-2.jpg"
+                alt="Slide 2"
+              /></swiper-slide>
+            <swiper-slide> <img
+                src="public/slide-3.jpg"
+                alt="Slide 3"
+              /></swiper-slide>
+          </swiper-container>
         </div>
 
         <div role="hero-slide"></div>
@@ -146,16 +161,56 @@
         estão abertas todos os dias. <br /><br />
         Confira os horários específicos de cada unidade.
       </p>
+<swiper-container space-between="-96" rewind>
+  <swiper-slide>
+   <div class="map">
+       <div class="map-mask">
+         <img src="public/mask.jpg" alt="mask" />
+       </div>
+       <address class="flex flex-col">
+         <h2>Av.Marehal Tito 1500</h2>
+         <h3>São Migual Paulista,São Paulo</h3>
+       </address>
+     </div>
+ </swiper-slide>
 
-      <div class="map">
+  <swiper-slide>
+    <div class="map">
         <div class="map-mask">
-          <img src="public/mask.jpg" alt="imagem da unidade" />
+          <img src="public/unidade-2.jpg" alt="unidade-2" />
         </div>
         <address class="flex flex-col">
           <h2>Av.Marehal Tito 1500</h2>
           <h3>São Migual Paulista,São Paulo</h3>
         </address>
       </div>
+  </swiper-slide>
+
+  <swiper-slide>
+    <div class="map">
+        <div class="map-mask">
+          <img src="public/unidade-3.jpg" alt="unidade-3" />
+        </div>
+        <address class="flex flex-col">
+          <h2>Av.Marehal Tito 1500</h2>
+          <h3>São Migual Paulista,São Paulo</h3>
+        </address>
+      </div>
+  </swiper-slide>
+
+   <swiper-slide>
+    <div class="map">
+        <div class="map-mask">
+          <img src="public/slide-3.jpg" alt="slide-3" />
+        </div>
+        <address class="flex flex-col">
+          <h2>Av.Marehal Tito 1500</h2>
+          <h3>São Migual Paulista,São Paulo</h3>
+        </address>
+      </div>
+  </swiper-slide>
+</swiper-container>
+      
     </section>
 
     <footer>
@@ -175,12 +230,11 @@
         <p>©Barbearia Vanguarda - Todos os direitos reservados desde 2023</p>
       </div>
     </footer>
-   
 
     <script>
       feather.replace();
 
-      const menu = document.querySelector("dialog")
+      const menu = document.querySelector("dialog");
     </script>
   </body>
 </html>
