@@ -64,7 +64,7 @@
       <div id="header=mask=spacer">
         <header>
           <div role="logo" class="logo-hero"></div>
-          <h1>Barbearia <span>Vanguarda</span></h1>
+          <h1>Barbearia<br><span>Vanguarda</span></h1>
         </header>
 
         <div id="hero-slider" role="mask">
@@ -219,7 +219,7 @@
       <div class="flex justify-between items-center">
         <div role="logo"></div>
         <!-- navegation -->
-        <nav class="flex gap-4">
+        <nav class="flex flex-col gap-8">
           <a href="#">Contato</a>
           <a href="#">Unidades</a>
           <a href="#">serviços</a>
@@ -241,7 +241,10 @@
       document.querySelector(".swiper-unidades").breakpoints = {
 400:{
   spaceBetween: -116
-}
+},
+768:{
+  spaceBetween: -356
+},
       }
 
     </script>
